@@ -46,7 +46,7 @@ class Resume extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 36),
+      padding: const EdgeInsets.fromLTRB(16, 36, 16, 0),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -68,26 +68,24 @@ class Resume extends StatelessWidget {
                       : Axis.horizontal,
               children: [
                 const CustomTabBar(),
-                Padding(
+                Container(
+                  width: MediaQuery.of(context).size.width - 160,
+                  height: MediaQuery.of(context).size.height - 190,
                   padding:
                       MediaQuery.of(context).orientation == Orientation.portrait
-                          ? const EdgeInsets.only(top: 32)
-                          : const EdgeInsets.only(left: 16),
-                  child: SizedBox(
-                    width: MediaQuery.of(context).size.width - 160,
-                    height: MediaQuery.of(context).size.height - 250,
-                    child: BlocBuilder<TabBarCubit, int>(
-                        builder: (context, state) {
-                      switch (state) {
-                        case 0:
-                          return const AboutMe();
-                        case 1:
-                          return const Experience();
-                        default:
-                          return const Education();
-                      }
-                    }),
-                  ),
+                          ? const EdgeInsets.only(top: 16)
+                          : const EdgeInsets.only(left: 20),
+                  child:
+                      BlocBuilder<TabBarCubit, int>(builder: (context, state) {
+                    switch (state) {
+                      case 0:
+                        return const AboutMe();
+                      case 1:
+                        return const Experience();
+                      default:
+                        return const Education();
+                    }
+                  }),
                 ),
               ]),
         )

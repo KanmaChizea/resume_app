@@ -10,8 +10,6 @@ List<Widget> smList = [
       iconPath: 'assets/linkedin.svg',
       link: 'https://www.linkedin.com/in/ogechukwukanma-chizea-42498461')),
   SMLink(SocialMedia(
-      iconPath: 'assets/gmail.svg', link: 'mailto:hchizea@gmail.com')),
-  SMLink(SocialMedia(
       iconPath: 'assets/github.svg', link: 'https://github.com/KanmaChizea')),
 ];
 

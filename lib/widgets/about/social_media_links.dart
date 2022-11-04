@@ -16,9 +16,9 @@ class SMLink extends StatelessWidget {
     return IconButton(
       onPressed: () async {
         final url = Uri.parse(socialMedia.link);
-        if (await canLaunchUrl(url)) {
+        try {
           launchUrl(url);
-        } else {
+        } catch (e) {
           ScaffoldMessenger.of(context).showSnackBar(
               const SnackBar(content: Text('Something went wrong!')));
         }
