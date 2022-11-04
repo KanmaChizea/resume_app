@@ -19,6 +19,8 @@ The data folder contains model classes and string constants.
 
 The widgets folder is subdivided into four folders; each representing a specific feature and containing custom widgets used only in that feature.
 
+The app assets are located in the assets folder
+
 ## Design description
 The app is a single page application with multiple tabs. Each tabview contains a section of the resume. The UI is simple and minimalistic, with only one primary color (#1B3979) in the light theme and two shades of grey for the dark theme. It uses outlined material icons 
 
