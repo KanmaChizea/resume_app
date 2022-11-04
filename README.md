@@ -39,4 +39,3 @@ The app is a single page application with multiple tabs. Each tabview contains a
 ### Links
 - Apk file: https://drive.google.com/file/d/1UlFwvpMeejpIwRZDkRok_XvWq4ms38it/view?usp=sharing
 - Appetize link: https://appetize.io/app/dz7uaya7j534guuvtvwlwsuham?device=pixel4&osVersion=12.0&scale=75
-- Github link: https://github.com/KanmaChizea/resume_app
