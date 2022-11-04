@@ -8,7 +8,7 @@ An interactive mobile version of your resume.
 - Interactive design
 
 ## Code base and how it works
-This codebase is a flutter codebase. It has 3 folders:
+This codebase is a flutter codebase. The lib folder consists of the main.dart file. The main.dart file consists of the main function and the home screen widget. The lib folder also has 3 folders:
 - core
 - data
 - widgets
